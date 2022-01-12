@@ -23,6 +23,43 @@ hr{
     margin-bottom: 27px;
 
 }
+/* header style  */
+header{
+    display: flex;
+    justify-content: center;
+    height: 94px;
+    background-color: #562EFF;
+}
+.header-main{
+    width: 930px;
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    width: 40.42px;
+    height: 51px;
+}
+.logo h3{
+    margin-left: 15px;
+    font-size: 24px;
+    font-weight: 55px;
+    color: white;
+}
+nav{
+    display: flex;
+    align-items: center;
+    
+}
+nav a{
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    margin-left: 36px;
+}
 
 /* top player style  */
 .top-players{
@@ -126,6 +163,13 @@ hr{
     .container{
         width: 100%;
     }
+    .header-main{
+        width: 100%;
+        justify-content: center;
+    }
+    nav a{
+        margin-left: 10px;
+    }
     .section-title{
         text-align: center;
     }
@@ -144,6 +188,10 @@ hr{
 @media only screen and (min-width:688px) and (max-width:992px) {
     .container{
         width: 100%;
+    }
+    .header-main{
+        width: 100%;
+        justify-content: center;
     }
     .players, .courses{
         grid-template-columns: repeat(2, 1fr);
